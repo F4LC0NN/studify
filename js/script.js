@@ -263,7 +263,6 @@ function toggleTooltip() {
       input.classList.remove('input-valid');
       input.classList.add('input-invalid');
       node.style.visibility = 'hidden';
-      node.src = '';
     }
   }
 
