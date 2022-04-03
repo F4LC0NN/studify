@@ -379,6 +379,7 @@ input {
 		align-items: center;
 		transform: scale(0.5);
 		top: 1rem;
+		right: 0.5rem;
 	}
 
 	.button-container {

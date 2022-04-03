@@ -97,7 +97,7 @@ html {
 	}
 
 	.element-container {
-		width: 15rem;
+		width: 12rem;
 		padding: 1rem;
 		font-size: calc(var(--default-font-size) * 0.5);
 	}
