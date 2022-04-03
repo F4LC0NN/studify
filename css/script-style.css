@@ -1,0 +1,174 @@
+/* 
+--------------------------------------------------------------------
+This stylesheet is for styling the validation sign and tooltip modal 
+--------------------------------------------------------------------
+*/
+
+:root {
+	/* COLORS */
+	--bright-green: #03deb7;
+	--light-green: #18ac92;
+	--green: #1ca67f;
+	--dark-green: #005b4b;
+	--blue: #0161a7;
+	--light-grey: #f5f5f5;
+	--grey: #d7d7d7;
+	--dark-grey: #afafaf;
+	--pure-white: #ffffff;
+
+	/* BORDERS */
+	--default-border: 1px solid var(--grey);
+
+	/* FONTS */
+	--default-font-size: 1.125em;
+	/* SHADOWS */
+	--tooltip-shadow: 0 10px 60px #00000030;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.form-container {
+	position: relative;
+}
+
+.tooltip-container {
+	position: absolute;
+	left: -31rem;
+	z-index: 2;
+}
+
+.element-container {
+	width: 30rem;
+	padding: 2rem;
+	font-size: calc(var(--default-font-size) * 0.8);
+	font-weight: 600;
+	border: var(--default-border);
+	border-radius: 1rem;
+	color: var(--dark-grey);
+	background-color: var(--pure-white);
+	box-shadow: var(--tooltip-shadow);
+}
+
+.input-valid {
+	border: 3px solid #18ac92;
+}
+
+.input-invalid {
+	border: 1px solid #d7d7d7;
+}
+
+.element-valid {
+	color: #18ac92;
+	border: 3px solid #18ac92;
+	background-color: #ffffff;
+	z-index: 1;
+}
+
+.element-invalid {
+	color: #afafaf;
+	border: 1px solid #d7d7d7;
+	background-color: #ffffff;
+	z-index: 1;
+}
+
+.validation-sign {
+	visibility: hidden;
+}
+
+@media only screen and (min-width: 0) and (max-width: 359px) {
+	.validation-sign {
+		position: relative;
+		bottom: 10px;
+		transform: scale(0.7);
+	}
+
+	.tooltip-container {
+		position: static;
+		display: flex;
+		justify-content: center;
+	}
+
+	.element-container {
+		width: 15rem;
+		padding: 1rem;
+		font-size: calc(var(--default-font-size) * 0.5);
+	}
+}
+
+@media only screen and (min-width: 360px) {
+	.tooltip-container {
+		position: static;
+		display: flex;
+		justify-content: center;
+	}
+
+	.element-container {
+		width: 15rem;
+		padding: 1rem;
+		font-size: calc(var(--default-font-size) * 0.5);
+	}
+
+	.validation-sign {
+		transform: scale(0.7);
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.tooltip-container {
+		position: static;
+		display: flex;
+		justify-content: center;
+	}
+
+	.element-container {
+		width: 24rem;
+		padding: 2rem;
+		font-size: calc(var(--default-font-size) * 0.6);
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.tooltip-container {
+		position: static;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.tooltip-container {
+		position: static;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.element-container {
+		width: 25rem;
+	}
+
+	.tooltip-container {
+		position: absolute;
+		left: -26rem;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.element-container {
+		width: 30rem;
+		font-size: calc(var(--default-font-size) * 0.8);
+	}
+
+	.tooltip-container {
+		left: -31rem;
+	}
+}
