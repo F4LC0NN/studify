@@ -15,7 +15,7 @@ const phoneNumberRegex = /((\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?)?\d{3}[\
 const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&-_])[A-Za-z\d@$!%*?&-_]{8,}$/;
 
 /* SELECTORS */
-const passwordEyeArray = Array.from(document.querySelectorAll('.password-eye-container'));
+const passwordEyeArray = Array.from(document.querySelectorAll('.password-eye-image'));
 const userPassword = document.querySelector('#user-password');
 const userConfirmPassword = document.querySelector('#user-confirm-password');
 
@@ -269,17 +269,16 @@ function toggleTooltip() {
   // Toggle the password input to show or hide the password whenever the user clicks on the eye icon
   function togglePassword() {
     passwordEyeArray.forEach(passwordEye => {
-      passwordEye.style.backgroundImage = './images/eye-hide.svg';
       switch (passwordEye.parentNode) {
         case userPassword.parentNode:
           passwordEye.addEventListener('click', () => {
             switch (userPassword.type) {
               case 'password':
-                passwordEye.style.backgroundImage = 'url(./images/eye-show.svg)';
+                passwordEye.src = 'url(./images/eye-show.svg)';
                 userPassword.type = 'text';
               break;
               case 'text':
-                passwordEye.style.backgroundImage = 'url(./images/eye-hide.svg)';
+                passwordEye.src = 'url(./images/eye-hide.svg)';
                 userPassword.type = 'password';
               break;
             }
