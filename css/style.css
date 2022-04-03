@@ -232,14 +232,14 @@ input {
 	position: relative;
 }
 
-.password-eye-container {
+.password-eye-image {
 	position: absolute;
 	cursor: pointer;
 	right: 1rem;
 	bottom: 0.5rem;
 	width: 2rem;
 	height: 2rem;
-	transform: scale(1.5);
+	transform: scale(0.8);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -374,10 +374,10 @@ input {
 		font-size: calc(var(--default-font-size) * 0.5);
 	}
 
-	.password-eye-container {
+	.password-eye-image {
 		display: flex;
 		align-items: center;
-		transform: scale(0.7);
+		transform: scale(0.5);
 		top: 1rem;
 	}
 
@@ -497,10 +497,10 @@ input {
 		font-size: calc(var(--default-font-size) * 0.6);
 	}
 
-	.password-eye-container {
+	.password-eye-image {
 		display: flex;
 		align-items: center;
-		transform: scale(1);
+		transform: scale(0.5);
 		top: 2.5rem;
 	}
 
@@ -613,10 +613,10 @@ input {
 		font-size: calc(var(--default-font-size) * 0.6);
 	}
 
-	.password-eye-container {
+	.password-eye-image {
 		display: flex;
 		align-items: center;
-		transform: scale(1);
+		transform: scale(0.5);
 		top: 2.5rem;
 	}
 
@@ -707,6 +707,13 @@ input {
 		font-size: calc(var(--default-font-size) * 0.8);
 	}
 
+	.password-eye-image {
+		display: flex;
+		align-items: center;
+		transform: scale(0.5);
+		top: 2.5rem;
+	}
+
 	.button-container {
 		display: flex;
 		flex-direction: column;
@@ -793,6 +800,13 @@ input {
 
 	input {
 		font-size: calc(var(--default-font-size) * 0.8);
+	}
+
+	.password-eye-image {
+		display: flex;
+		align-items: center;
+		transform: scale(0.7);
+		top: 2.5rem;
 	}
 
 	.button-container {

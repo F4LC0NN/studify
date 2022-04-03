@@ -18,6 +18,7 @@ const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&-_])[A-Za-z\d
 const passwordEyeArray = Array.from(document.querySelectorAll('.password-eye-image'));
 const userPassword = document.querySelector('#user-password');
 const userConfirmPassword = document.querySelector('#user-confirm-password');
+console.log(passwordEyeArray);
 
 const tooltipContainer = document.querySelector('.tooltip-container');
 const inputArray = Array.from(document.querySelectorAll('input'));
@@ -269,16 +270,17 @@ function toggleTooltip() {
   // Toggle the password input to show or hide the password whenever the user clicks on the eye icon
   function togglePassword() {
     passwordEyeArray.forEach(passwordEye => {
-      switch (passwordEye.parentNode) {
+      switch (passwordEye.parentNode.parentNode) {
         case userPassword.parentNode:
           passwordEye.addEventListener('click', () => {
+            console.log(passwordEye);
             switch (userPassword.type) {
               case 'password':
-                passwordEye.src = 'url(./images/eye-show.svg)';
+                passwordEye.src = './images/eye-show.svg';
                 userPassword.type = 'text';
               break;
               case 'text':
-                passwordEye.src = 'url(./images/eye-hide.svg)';
+                passwordEye.src = './images/eye-hide.svg';
                 userPassword.type = 'password';
               break;
             }
@@ -288,11 +290,11 @@ function toggleTooltip() {
           passwordEye.addEventListener('click', () => {
             switch (userConfirmPassword.type) {
               case 'password':
-                passwordEye.style.backgroundImage = 'url(./images/eye-show.svg)';
+                passwordEye.src = './images/eye-show.svg';
                 userConfirmPassword.type = 'text';
               break;
               case 'text':
-                passwordEye.style.backgroundImage = 'url(./images/eye-hide.svg)';
+                passwordEye.src = './images/eye-hide.svg';
                 userConfirmPassword.type = 'password';
               break;
             }
