@@ -243,6 +243,7 @@ input {
 	background-image: url(./images/eye-hide.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+	z-index: 2;
 }
 
 .button-container {
