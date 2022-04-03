@@ -240,7 +240,7 @@ input {
 	width: 2rem;
 	height: 2rem;
 	transform: scale(1.5);
-	background-image: url(/images/eye-hide.svg);
+	background-image: url(/studify/images/eye-hide.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
