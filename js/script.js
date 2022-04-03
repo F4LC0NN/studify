@@ -237,7 +237,7 @@ function toggleTooltip() {
         input.classList.remove('input-invalid');
         input.classList.add('input-valid');
         node.style.visibility = 'visible';
-        node.src = '/images/yes.svg';
+        node.src = './images/yes.svg';
       }else {
         input.classList.remove('input-valid');
         input.classList.add('input-invalid');
@@ -258,7 +258,7 @@ function toggleTooltip() {
       input.classList.remove('input-invalid');
       input.classList.add('input-valid');
       node.style.visibility = 'visible';
-      node.src = '/images/yes.svg';
+      node.src = './images/yes.svg';
     } else {
       input.classList.remove('input-valid');
       input.classList.add('input-invalid');
@@ -275,11 +275,11 @@ function toggleTooltip() {
           passwordEye.addEventListener('click', () => {
             switch (userPassword.type) {
               case 'password':
-                passwordEye.style.backgroundImage = 'url(/images/eye-show.svg)';
+                passwordEye.style.backgroundImage = 'url(./images/eye-show.svg)';
                 userPassword.type = 'text';
               break;
               case 'text':
-                passwordEye.style.backgroundImage = 'url(/images/eye-hide.svg)';
+                passwordEye.style.backgroundImage = 'url(./images/eye-hide.svg)';
                 userPassword.type = 'password';
               break;
             }
@@ -289,11 +289,11 @@ function toggleTooltip() {
           passwordEye.addEventListener('click', () => {
             switch (userConfirmPassword.type) {
               case 'password':
-                passwordEye.style.backgroundImage = 'url(/images/eye-show.svg)';
+                passwordEye.style.backgroundImage = 'url(./images/eye-show.svg)';
                 userConfirmPassword.type = 'text';
               break;
               case 'text':
-                passwordEye.style.backgroundImage = 'url(/images/eye-hide.svg)';
+                passwordEye.style.backgroundImage = 'url(./images/eye-hide.svg)';
                 userConfirmPassword.type = 'password';
               break;
             }
