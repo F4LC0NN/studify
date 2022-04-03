@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="/images/studify-favicon.svg" />
+		<link rel="stylesheet" href="css/script-style.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/script.js" defer></script>
+		<title>Studify, Teach the world!</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="container-left">
+				<div class="hero-container">
+					<img
+						src="images/hero.svg"
+						alt="Image: A teacher teaching a student on a computer."
+						class="hero-image"
+					/>
+				</div>
+			</div>
+			<div class="container-right">
+				<div class="header-container">
+					<h1 class="main-title">
+						<span class="title-span">Studify</span>, Teach the world<span
+							class="title-span"
+							>!</span
+						>
+					</h1>
+					<h2 class="main-subtitle">
+						Teach students from all around the world.
+					</h2>
+					<p class="main-paragraph">
+						Join our
+						<span class="para-span-one">community of teachers</span> and start
+						teaching online.<br />
+						Meet with our peers and students
+						<span class="para-span-two">around the world</span>.<br />
+						<span class="para-span-three">Shape your students future</span> with
+						your knowledge and expertise.
+					</p>
+				</div>
+				<div class="form-container">
+					<div class="tooltip-container"></div>
+					<form method="post">
+						<div class="form-card">
+							<div class="form-header">
+								<h3 class="form-title">
+									Let<span class="title-span">'</span>s begin<span
+										class="title-span"
+										>!</span
+									>
+								</h3>
+								<p class="required-info">
+									All required fields are marked with an asterisk (<span
+										class="required-symbol"
+										>*</span
+									>)
+								</p>
+							</div>
+							<div class="form-body">
+								<fieldset class="user-personal-info-field">
+									<legend class="user-personal-info-title">
+										Tell us about yourself
+									</legend>
+									<div class="user-personal-info-container">
+										<div class="input-container">
+											<div class="label-container">
+												<label for="user-firstname"
+													>Firstname
+													<span class="required-symbol">*</span></label
+												>
+												<div class="validation-sign-container">
+													<img
+														src=""
+														alt="Green tick sign"
+														class="validation-sign"
+													/>
+												</div>
+											</div>
+											<input
+												type="text"
+												id="user-firstname"
+												name="firstname"
+												required
+											/>
+										</div>
+										<div class="input-container">
+											<div class="label-container">
+												<label for="user-lastname"
+													>Lastname
+													<span class="required-symbol">*</span></label
+												>
+												<div class="validation-sign-container">
+													<img
+														src=""
+														alt="Green tick sign"
+														class="validation-sign"
+													/>
+												</div>
+											</div>
+											<input
+												type="text"
+												id="user-lastname"
+												name="lastname"
+												required
+											/>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="user-credentials-field">
+									<legend class="user-credentials-title">
+										The last steps to start teaching
+									</legend>
+									<div class="user-credentials-container">
+										<div class="input-container">
+											<div class="label-container">
+												<label for="user-email"
+													>Email address
+													<span class="required-symbol">*</span></label
+												>
+												<div class="validation-sign-container">
+													<img
+														src=""
+														alt="Green tick sign"
+														class="validation-sign"
+													/>
+												</div>
+											</div>
+											<input
+												type="email"
+												id="user-email"
+												name="email"
+												required
+												autocomplete="new-email"
+											/>
+										</div>
+										<div class="input-container">
+											<div class="label-container">
+												<label for="user-phone-number">Phone Number</label>
+												<div class="validation-sign-container">
+													<img
+														src=""
+														alt="Green tick sign"
+														class="validation-sign"
+													/>
+												</div>
+											</div>
+											<input
+												type="tel"
+												id="user-phone-number"
+												name="phone-number"
+											/>
+										</div>
+										<div class="input-container password-container">
+											<div class="label-container">
+												<label for="user-password"
+													>Password
+													<span class="required-symbol">*</span></label
+												>
+												<div class="validation-sign-container">
+													<img
+														src=""
+														alt="Green tick sign"
+														class="validation-sign"
+													/>
+												</div>
+											</div>
+											<input
+												type="password"
+												id="user-password"
+												name="password"
+												required
+												autocomplete="new-password"
+											/>
+											<i class="bi bi-eye-slash" id="togglePassword"></i>
+											<div class="password-eye-container"></div>
+										</div>
+										<div class="input-container confirm-password-container">
+											<div class="label-container">
+												<label for="user-confirm-password"
+													>Confirm Password
+													<span class="required-symbol">*</span></label
+												>
+												<div class="validation-sign-container">
+													<img
+														src=""
+														alt="Green tick sign"
+														class="validation-sign"
+													/>
+												</div>
+											</div>
+											<input
+												type="password"
+												id="user-confirm-password"
+												name="password-confirmation"
+												autocomplete="new-confirm-password"
+											/>
+											<div class="password-eye-container"></div>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+						</div>
+						<div class="button-container">
+							<button type="submit" class="submit-form-button">
+								Create Account
+							</button>
+							<p class="login-info">
+								Already have an account?
+								<a href="#" class="login-link">Log in</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
