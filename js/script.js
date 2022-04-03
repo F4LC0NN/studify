@@ -269,6 +269,7 @@ function toggleTooltip() {
   // Toggle the password input to show or hide the password whenever the user clicks on the eye icon
   function togglePassword() {
     passwordEyeArray.forEach(passwordEye => {
+      passwordEye.style.backgroundImage = './images/eye-hide.svg';
       switch (passwordEye.parentNode) {
         case userPassword.parentNode:
           passwordEye.addEventListener('click', () => {
